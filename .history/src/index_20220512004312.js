@@ -14,7 +14,7 @@ const secondBook = {
   title: "By Water Beneath the Walls: The Rise of the Navy SEALs",
   author: "Benjamin H. Milligan, Kaleo Griffith, et al."
 };
-
+ 
 function BookList() {
   return (
     <section className="booklist">
@@ -22,38 +22,22 @@ function BookList() {
         img={firstBook.img}
         title={firstBook.title}
         author={firstBook.author}
-      >
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-          fugit, cum ad labore in quod saepe repellendus minima impedit laborum
-          a, laboriosam porro eveniet deserunt aliquam illum. Aliquam,
-          voluptatem impedit?
-        </p>
-      </Book>
-
+      />
       <Book
         img={secondBook.img}
         title={secondBook.title}
         author={secondBook.author}
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia
-          recusandae ducimus quisquam illum eaque, iusto repellendus pariatur,
-          minus, dicta ullam excepturi praesentium minima! Enim eligendi eius
-          quibusdam iste dolor!
-        </p>
-      </Book>
+      />
     </section>
   );
 }
 const Book = (props) => {
-    const { img, title, author} = props;
+    const {}
   return (
     <article className="book">
-      <img src={img} alt="" />
-      <h1>{title}</h1>
-      <h4>{author} </h4>
-      {props.children}
+      <img src={props.img} alt="" />
+      <h1>{props.title}</h1>
+      <h4>{props.author} </h4>
     </article>
   );
 };

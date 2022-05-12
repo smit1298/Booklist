@@ -36,24 +36,17 @@ function BookList() {
         title={secondBook.title}
         author={secondBook.author}
       >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia
-          recusandae ducimus quisquam illum eaque, iusto repellendus pariatur,
-          minus, dicta ullam excepturi praesentium minima! Enim eligendi eius
-          quibusdam iste dolor!
-        </p>
+          <p></p>
       </Book>
     </section>
   );
 }
-const Book = (props) => {
-    const { img, title, author} = props;
+const Book = ({ img, title, author }) => {
   return (
     <article className="book">
       <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author} </h4>
-      {props.children}
     </article>
   );
 };
