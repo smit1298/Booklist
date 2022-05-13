@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import {data} from "./books";
-import Book from "./Book";
+import B from "./Book";
 
 // set up vars
 
